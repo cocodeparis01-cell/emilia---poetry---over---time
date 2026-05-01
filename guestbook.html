@@ -1,8 +1,3 @@
-
-Emilia Neale <cocodeparis01@gmail.com>
-2:44 PM (2 minutes ago)
-to me
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,3 +18,28 @@ a { color: #d4af37; }
 <body>
 
 <h1>Guestbook</h1>
+
+<p>Leave a message below:</p>
+
+<div id="disqus_thread"></div>
+
+<script>
+var disqus_config = function () {
+this.page.url = window.location.href;
+this.page.identifier = "guestbook";
+};
+
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://poetryovertime.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the comments.</noscript>
+
+<p><a href="index.html">Back to Home</a></p>
+
+</body>
+</html>
